@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+td {
+	font-size: 13px; 
+	color:#000000; 
+	font-weight: none
+	}
+a:active {
+	color:#FF6600; 
+	text-decoration: none
+	}
+a:hover {
+	color:#FF6600; 
+	text-decoration: none
+	}
+a:link {  
+	color: #FF6600; 
+	text-decoration: none
+	}
+a:visited {  
+	color:#FF6600; 
+	text-decoration: none
+	}

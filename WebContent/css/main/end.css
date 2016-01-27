@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+BODY {
+	margin-top: 0px; 
+	font-size: 9pt; 
+	margin-left: 0px; 
+	color: #ffffff; 
+	line-height: 150%; 
+	margin-right: 0px; 
+	font-family: "宋体"; 
+	background-color: #ffffff
+}

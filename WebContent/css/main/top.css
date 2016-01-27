@@ -1,0 +1,50 @@
+.top {
+	font-size: 9pt;
+	vertical-align: bottom; 
+	padding-top: 0px; 
+	font-family: "宋体"; 006600: 
+}
+BODY {
+	margin-top: 0px; font-size: 9pt; 
+	margin-left: 0px; color: #ffffff; 
+	line-height: 150%; 
+	margin-right: 0px; 
+	font-family: "宋体"; 
+	background-color: #ffffff ;
+crollbar-face-color:#ffcc00;
+scrollbar-highlight-color:#ff0000;
+scrollbar-shadow-color:#ffffff;
+scrollbar-3dlight-color:#000000;
+scrollbar-arrow-color:#000000;
+scrollbar-track-color:#fdeac4;
+scrollbar-darkshadow-color:#ffff00;
+}
+TD {
+	font-size: 9pt; 
+	color: #ffffff; 
+	line-height: 150%; 
+	font-family: 宋体
+}
+.My {  
+	font-size: 25px; 
+	color:#ffffff; 
+	font-weight: :bold 
+	}
+TD.top {
+	padding-right: 4px; 
+	padding-left: 4px; 
+	padding-bottom: 0px; 
+	padding-top: 0px
+}
+A:link {
+	color: #ffffff; 
+	text-decoration: none
+}
+A:visited {
+	color: #ffffff; 
+	text-decoration: none
+}
+A:hover {
+	color: #cebef7; 
+	text-decoration: none
+}
