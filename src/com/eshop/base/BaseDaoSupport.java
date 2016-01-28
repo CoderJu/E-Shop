@@ -1,37 +1,43 @@
 package com.eshop.base;
 
-import java.io.Serializable;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
-public abstract class BaseDaoSupport<T> implements BaseDao<T> {
+import org.springframework.transaction.annotation.Transactional;
 
+
+@Transactional
+public abstract class BaseDaoSupport implements BaseDao {
+
+	@PersistenceContext
+	protected EntityManager em;
+	
+	
 	@Override
-	public void save(T entity) {
-		// TODO Auto-generated method stub
-		
+	public void save(Object entity) {
+		em.persist(entity);
 	}
 
 	@Override
-	public void delete(Serializable entityid) {
-		// TODO Auto-generated method stub
-		
+	public <T> void delete(Class<T> entityClass, Object entityid) {
+		delete(entityClass, new Object[]{entityid});
 	}
 
 	@Override
-	public void update(T entity) {
-		// TODO Auto-generated method stub
-		
+	public <T> void delete(Class<T> entityClass, Object[] entityids) {
+		for (Object entityid : entityids) {
+			em.remove(em.getReference(entityClass, entityid));
+		}
 	}
 
 	@Override
-	public void query(Serializable entityid) {
-		// TODO Auto-generated method stub
-		
+	public <T> void update(Object entity) {
+		em.merge(entity);
 	}
-
+ 
 	@Override
-	public Integer getCount() {
-		// TODO Auto-generated method stub
-		return null;
+	public <T> T query(Class<T> entityClass, Object entityid) {
+		return em.find(entityClass, entityid);
 	}
 
 	

@@ -1,17 +1,18 @@
 package com.eshop.base;
 
-import java.io.Serializable;
 
 
-public interface BaseDao<T> {
 
-	public  void save(T entity);
+public interface BaseDao{
 
-	public void delete(Serializable entityid);
+	public void save(Object entity);
 
-	public void update(T entity);
+	public <T> void delete(Class<T> entityClass, Object entityid);
 	
-	public void query(Serializable entityid);
+	public <T> void delete(Class<T> entityClass, Object[] entityids);
+
+	public <T> void update( Object entity);
 	
-	public Integer getCount();
+	public <T> T query(Class<T> entityClass,Object entityid);
+	
 }

@@ -53,7 +53,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lucene-snowball.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lucene-spellchecker.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mail.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oro-2.0.8.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oscache-2.4.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/paoding-analysis.jar"/>
@@ -71,5 +70,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts-taglib-1.3.8.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts-tiles-1.3.8.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/velocity-1.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.38-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
