@@ -1,11 +1,14 @@
 package Junit.test.product;
 
 
+import java.util.LinkedHashMap;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.eshop.base.bean.QueryResult;
 import com.eshop.product.bean.ProductTypeBean;
 import com.eshop.product.service.ProductTypeService;
 
@@ -51,6 +54,17 @@ public class ProductTypeTest {
 		ProductTypeBean productTypeBean = productTypeService.query(ProductTypeBean.class, 1);
 		System.out.println(productTypeBean.getName());
 		System.out.println(productTypeBean.getNote());
+
+	}
+	
+	@Test
+	public void getPagination() {
+		LinkedHashMap<String, String> orderby = new LinkedHashMap<String , String>();
+		orderby.put("typeId", "asc");
+		QueryResult<ProductTypeBean> qr = productTypeService.getPagination(ProductTypeBean.class);
+		for(ProductTypeBean t : qr.getResultList()){
+			System.out.println(t.getName());
+		}
 
 	}
 

@@ -5,17 +5,17 @@ import java.util.List;
 public class QueryResult<T> {
 
 	private List<T> resultList;
-	private Integer totalRecoder;
+	private Long totalRecoder;
 	public List<T> getResultList() {
 		return resultList;
 	}
 	public void setResultList(List<T> resultList) {
 		this.resultList = resultList;
 	}
-	public Integer getTotalRecoder() {
+	public Long getTotalRecoder() {
 		return totalRecoder;
 	}
-	public void setTotalRecoder(Integer totalRecoder) {
+	public void setTotalRecoder(long totalRecoder) {
 		this.totalRecoder = totalRecoder;
 	}
 	

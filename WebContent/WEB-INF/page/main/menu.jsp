@@ -61,16 +61,16 @@ function turnit(id) {
 <table id="menu_Product" border=0 width="98%" align="center" cellspacing="0" cellpadding="0" style="display:none">
   <tr> 
     <td width="50"><img src="/images/vertline.gif" border=0><img src="/images/lastnodeline.gif" align="absMiddle" border=0 width="16" height="22"><img src="/images/doctemp.gif" align="absMiddle" border="0" width="16" height="16"></td>
-    <td width="123"> <a href="<html:rewrite action='/control/product/type/list'/>">产品类别管理</a> </td>
+    <td width="123"> <a href="<html:rewrite action='/control/productManage/type/list'/>">产品类别管理</a></td>
   </tr>
-  <tr> 
+  <%-- <tr> 
     <td width="50"><img src="/images/vertline.gif" border=0><img src="/images/lastnodeline.gif" align="absMiddle" border=0 width="16" height="22"><img src="/images/doctemp.gif" align="absMiddle" border="0" width="16" height="16"></td>
     <td width="123"> <a href="<html:rewrite action='/control/brand/list'/>">产品品牌管理</a> </td>
   </tr>
   <tr> 
     <td width="50"><img src="/images/vertline.gif" border=0><img src="/images/lastnodeline.gif" align="absMiddle" border=0 width="16" height="22"><img src="/images/doctemp.gif" align="absMiddle" border="0" width="16" height="16"></td>
     <td width="123"> <a href="<html:rewrite action='/control/product/list'/>">产品管理</a> </td>
-  </tr>
+  </tr> --%>
 </table>
 <!-------------------------产品管理END------------------------------->
 <table border="0" width="98%" align="center" cellspacing="0" cellpadding="0">

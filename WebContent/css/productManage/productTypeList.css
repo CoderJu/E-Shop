@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+body{
+	background:#FFFFFF;
+	bgcolor:#FFFFFF;
+	text:#000000;
+	marginwidth:0;
+	marginheight:0;
+}
+table{ 
+	width:100%; 
+	border:0; 
+	cellspacing:1; 
+	cellpadding:2; 
+	text-align:center;
+}
+
+.listHead td{
+	background-color:#6f8ac4;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+.listHead td:nth-child(2n){
+	white-space:nowrap;
+	}
+
+.date td{
+	background-color:#f5f5f5;
+	text-align:center;
+}
+
+.end{
+	background-color:#f5f5f5;
+	text-align:center;
+}
+
+.end table{
+	width:100%; 
+	border:0; 
+	cellspacing:1; 
+	cellpadding:3;
+}

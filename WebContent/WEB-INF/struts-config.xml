@@ -9,5 +9,13 @@
 	<action path="/control/center/left" forward="/WEB-INF/page/main/menu.jsp"/>
 	<action path="/control/center/right" forward="/WEB-INF/page/main/right.jsp"/>
 	<action path="/control/center/end" forward="/WEB-INF/page/main/end.jsp"/>
+	
+	<action path="/control/productManage/type/list"  scope="request">
+			<forward name="list" path="/WEB-INF/page/productManage/productTypeList.jsp"/>
+	</action>
 	</action-mappings>
+	
+	<controller>
+	    <set-property property="processorClass" value="org.springframework.web.struts.DelegatingRequestProcessor"/>
+	</controller> 
 </struts-config>
