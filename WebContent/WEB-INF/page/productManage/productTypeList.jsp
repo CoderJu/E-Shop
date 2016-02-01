@@ -6,27 +6,36 @@
 <head>
 <title>产品类别管理</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+	function toPage(){
+		
+	}
+</script>
+
 </head>
 <body>
+<html:form action="/control/productManage/type/list" method="post">
   <table>
     <tr class="listHead">
       <td width="8%">代号</td>
       <td width="5%">修改</td>
-      <td width="20%">产品类别名称</td>
+      <td width="10%">产品类别名称</td>
 	  <td width="10%">创建下级类别</td>
 	  <td width="15%">所属父类</td>
 	  <td>备注</td>
-	  <td width="10%">创建时间</td>
+	  <td width="20%">创建时间</td>
     </tr>
+  	<c:forEach items="${pageView.records }" var= "entity">
     <tr class="date">
-      <td>1</td>
+      <td>${entity.typeId }</td>
       <td><img src="/images/edit.gif" width="15" height="16" border="0"></td>
-      <td>2</td>
+      <td>${entity.name }</td>
 	  <td>创建子类别</td>
-	  <td>3</td>
-	  <td>测试字符</td>
-	  <td>测试字符</td>
+	  <td><c:if test="${! empty entity.parentType.name }"> ${entity.parentType.name }</c:if></td>
+	  <td>${entity.note }</td>
+	  <td>${entity.createTime }</td>
 	</tr>
+	</c:forEach>
     <tr> 
       <td class="end" colspan="7">
       <table>
@@ -41,5 +50,6 @@
         </td>
     </tr>
   </table>
+  </html:form>
 </body>
 </html>

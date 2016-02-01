@@ -15,6 +15,15 @@ public class ProductTypeFormBean extends ActionForm {
 	private String note;
 	private Integer parentId;
 	private Date createTime;
+	private int page;
+	
+	
+	public int getPage() {
+		return page < 1 ?1:page;
+	}
+	public void setPage(int page) {
+		this.page = page;
+	}
 	public Integer getTypeId() {
 		return typeId;
 	}
